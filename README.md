@@ -105,6 +105,13 @@ Open your browser and navigate to the local URL provided in the terminal (typica
 
 
 ---
+## ScreenShots
+![Login Page](assets/images/login.png)
+![Student Registration](assets/images/register-student.png)
+![Student List](assets/images/student-list.png)
+
+
+---
 
 ## Project Structure
 
