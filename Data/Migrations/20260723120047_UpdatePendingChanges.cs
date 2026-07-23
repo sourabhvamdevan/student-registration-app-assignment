@@ -1,0 +1,38 @@
+﻿using Microsoft.EntityFrameworkCore.Migrations;
+
+#nullable disable
+
+namespace StudentRegistrationApp.Data.Migrations
+{
+    /// <inheritdoc />
+    public partial class UpdatePendingChanges : Migration
+    {
+        /// <inheritdoc />
+        protected override void Up(MigrationBuilder migrationBuilder)
+        {
+            migrationBuilder.CreateTable(
+                name: "Students",
+                columns: table => new
+                {
+                    Id = table.Column<int>(type: "INTEGER", nullable: false)
+                        .Annotation("Sqlite:Autoincrement", true),
+                    FullName = table.Column<string>(type: "TEXT", maxLength: 100, nullable: false),
+                    Email = table.Column<string>(type: "TEXT", nullable: false),
+                    Department = table.Column<string>(type: "TEXT", maxLength: 50, nullable: false),
+                    EnrollmentYear = table.Column<int>(type: "INTEGER", nullable: false),
+                    UserId = table.Column<string>(type: "TEXT", nullable: true)
+                },
+                constraints: table =>
+                {
+                    table.PrimaryKey("PK_Students", x => x.Id);
+                });
+        }
+
+        /// <inheritdoc />
+        protected override void Down(MigrationBuilder migrationBuilder)
+        {
+            migrationBuilder.DropTable(
+                name: "Students");
+        }
+    }
+}
