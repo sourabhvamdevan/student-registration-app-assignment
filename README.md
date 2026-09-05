@@ -12,6 +12,12 @@ A secure full-stack web application built using **ASP.NET Core Razor Pages** and
 
 ---
 
+## Live Link
+
+* **Live Link** [https://student-registration-app-assignment.onrender.com/]
+
+---
+
 ## Features
 
 * **User Authentication:** Complete registration, login, and logout workflows powered by ASP.NET Core Identity.
